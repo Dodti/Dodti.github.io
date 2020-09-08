@@ -1,0 +1,351 @@
+/* Made By https://mortnsn.com/ All Rights Reserved 2020 Â© */
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  background:white; 
+  font-family: "Poppins",sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+br::selection{background:transparent;}
+
+
+/* TAB */
+.tab-contact a{
+  cursor: pointer;
+  color:#F44336;
+  border-bottom:2px #F44336 solid;
+}
+/* TAB */
+ 
+/* PROJECTS */
+.container{
+ width: 90%;
+ margin:auto;
+ height:100vh;
+ display:flex;
+}
+
+/*LEFT CONTAINER*/
+.container-left{
+ order: 2;
+ width:40%;
+ height:100vh;
+ display:flex;
+ margin: auto;
+ justify-content: center;
+ align-items: center;
+} 
+.container-left-1{
+ width:100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+
+.projects{
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.projects p{margin:0;}
+.projects p::selection{color:#F44336;}
+.projects a{
+  color: transparent;
+  font-size: 4vh;
+  transition: 0.2s all ease-in-out;
+  -webkit-text-stroke: 1.5px #F44336;
+  text-decoration:none;
+  font-weight: 800;
+  text-transform:uppercase;
+}
+.projects a:hover{color: #F44336; }
+.projects img::selection{text-decoration:none;}
+
+
+.contact-email{
+  width: 100%;
+  margin: auto;
+  transition: 0.1s ease-in filter;
+}
+.contact-email a{
+  text-decoration:inherit;
+  transition:0.2s ease-in-out color;
+}
+.contact-email a:hover{color:#F44336;}
+.contact-email p{
+  font-weight: 800;
+  color: transparent;
+  font-size: 5vh;
+  transition: 0.2s all ease-in-out;
+  -webkit-text-stroke: 1.5px #F44336;
+  line-height: 4.5vh;
+}
+.contact-email p:hover{color:#F44336;}
+.contact-email img{
+  width:20px;
+  height:15px;
+  position:absolute;
+}
+#contact-email-id{   
+  -webkit-text-stroke: 0px;
+  color: black;
+}
+#contact-email-id::selection{color:#F44336;}
+
+.dribble-linkedin{
+  text-align: right;
+  flex-direction: column;
+}     
+.contact-dribbble{
+  width: 100%;
+  text-align: right;
+  margin: auto;
+  opacity:1;
+  transition:0.1s ease-in filter;
+}
+.contact-linkedin{
+  width: 100%;
+  text-align: right;
+  margin: auto;
+  opacity:1;
+  transition:0.1s ease-in filter;
+}
+/*LEFT CONTAINER*/
+
+
+
+
+/*RIGHT CONTAINER*/
+.container-right{
+  width: 50%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  order: 1;
+}
+.box-image{
+  width: 70vh;
+  height: 70vh;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+ 
+} 
+.image{
+  width: 70vh;
+  height: 70vh;
+  background: url(https://mortnsn.com/projects/mortnsn/utah-res.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+} 
+
+/*RIGHT CONTAINER*/
+ 
+
+
+
+
+
+
+/*RESPONSIVE version */
+
+/* DESKTOP *//* DESKTOP *//* DESKTOP */ 
+
+@media screen and (min-height: 900px) and (max-width: 1500px){
+.container{width:95%;}
+.box-image {
+  width: 73vh;
+  height: 52vh;
+}
+.projects{height:52vh;}
+.image{width: 53vh;}
+}
+
+
+@media screen and (min-height: 900px) and (max-width: 1100px){
+ 
+.box-image {
+  width: 60vh;
+  height: 45vh;
+}
+.projects{height:45vh;}
+.image{width: 46vh;}
+}
+
+
+/* MOBILE*//* MOBILE*//* MOBILE*/
+@media screen and (min-height: 900px) and (max-width: 850px){
+.red{display: none;}
+.container{width:100%;} 
+.container-left{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  z-index:1;
+  overflow: hidden;
+}
+.container-left-box{height: auto;}
+.projects-title{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.projects-title p{display: none;}
+.projects p::selection{-webkit-text-stroke: 0px;}
+
+.contact-email{
+  height:60px;
+}
+.contact-email p{
+  font-size: 4vh;
+  line-height: 4.5vh;
+}
+.dribble-linkedin{text-align: center;}
+.contact-dribbble,.contact-linkedin{text-align: center;}
+
+.container-right{
+  width:100%;
+  height:100vh;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column; 
+  z-index:0;
+  overflow: hidden;
+}
+.box-image{
+  width:100%;
+  height:100vh;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column; 
+  max-width: unset;
+}  
+.image{
+  width:100%;
+  max-width: -webkit-fill-available;
+  height:100vh;
+  background: url(https://mortnsn.com/projects/mortnsn/utah-res.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+}
+
+/*Javascripts*/
+.box-image{opacity: 1;}
+.image-text{margin-top:0px;opacity:0;}
+/*Javascripts*/
+
+
+
+}
+/* MOBILE*//* MOBILE*//* MOBILE*/
+/* DESKTOP *//* DESKTOP *//* DESKTOP */ 
+
+
+
+
+
+
+
+
+
+
+/* LAPTOP *//* LAPTOP *//* LAPTOP */
+ 
+@media only screen and (max-height: 900px) and (max-width: 1100px){
+.box-image {
+  width: 66vh;
+  height: 45vh;
+}
+.projects{height:45vh;}
+.image-text p{font-size:9.5vh;}
+.image{width: 46vh;}
+}
+
+
+/* MOBILE*//* MOBILE*//* MOBILE*/
+@media screen and (max-height: 900px) and (max-width: 900px) {
+.red{display: none;}
+.container{width:100%;} 
+ 
+.container-left{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  z-index:1;
+  overflow: hidden;
+}
+.container-left-box{height: auto;}
+ 
+.projects p::selection{-webkit-text-stroke: 0px;} 
+.contact-email{
+  height:60px;
+}
+.contact-email p{
+  font-size: 4vh;
+  line-height: 4.5vh;
+}
+.dribble-linkedin{text-align: center;}
+.contact-dribbble,.contact-linkedin{text-align: center;}
+.container-right{
+  width:100%;
+  height:100vh;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column; 
+  z-index:0;
+  overflow: hidden;
+}
+.box-image{
+  width:100%;
+  height:100vh;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column; 
+  max-width: unset;
+}  
+.image{
+  width:100%;
+  max-width: -webkit-fill-available;
+  height:100vh;
+  background: url(https://mortnsn.com/projects/mortnsn/utah-res.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+}
+
+
+ 
+
+/*Javascripts*/
+.image-text{margin-top:0px;}
+/*Javascripts*/
+
+}
+/* MOBILE*//* MOBILE*//* MOBILE*/
+ 
+/* Made By https://mortnsn.com/ All Rights Reserved 2020 Â© */
